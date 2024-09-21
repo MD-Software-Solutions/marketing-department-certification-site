@@ -1,1 +1,1 @@
-JCHS' Marketing Program certfication site.
+Yo, yea idk. See if you can fix the responsiveness. It work jsut fine when you inspect and adjust using the responsiveness slider, but when you start picking out individual devices, it kinda just breaks

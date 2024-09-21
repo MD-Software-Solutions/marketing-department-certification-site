@@ -1,1 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend Deca";
+}
 
+.white {
+    color: white;
+}
+
+
+.red {
+    color: darkred;
+}
+
+
+.hero-banner {
+    /* Makes the image fit the wrapper */
+    object-fit: cover;
+
+    /* Position the image */
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 120%;
+
+    z-index: -1;
+    padding-bottom: 100px;
+
+    filter: brightness(30%);
+
+}
+
+
+.hero {
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+
+    /* Dynamically adjusts the wrapper height between 760 to 870px based on the viewport */
+    height: 730px;
+
+    z-index: 0;
+    
+} 
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #000;
+    padding: 0rem 2rem;
+}
+
+.column-left h1 {
+    margin-bottom: 2rem;
+    font-size: 80px;
+
+}
+
+.column-left p {
+    font-size: 50px;
+}
+
+
+.column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+.hero-image {
+    width: 70%;
+    height: 70%;
+}
+
+.hero-text {
+    font-weight: 800;
+    line-height: 50px;
+    z-index: 2;
+}
+
+
+.split-Wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    margin-top: 2.8rem;
+}
+
+.split-Wrapper img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.split-Right{
+    padding: 0px 50px 20px;
+    margin-top: 10%;
+}
+
+.split-Right h1 {
+    font: 200px;
+    font-weight: 100px;
+    color: darkred;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    .column-left h1 {
+        margin-top: 5rem;
+        font-size: 80px;
+    
+    }
+    
+    .hero-container {
+      grid-template-columns: 1fr;
+    }
+
+    .split-Wrapper {
+        grid-template-columns: 1fr;
+    }
+  }
