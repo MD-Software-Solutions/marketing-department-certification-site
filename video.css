@@ -13,10 +13,9 @@
 .bg-IMG {
     position: absolute;
     width: 100%;
-    height: 130%;
+    height: 140%;
     object-fit: cover;
-    filter: brightness(25%)
-}
+    filter: brightness(25%);}
 
 .video-wrapper {
     position: relative;
@@ -118,17 +117,17 @@
 }
 
 .img-content:hover {
-    width: 95%;
+    transform: scale(1.15);
     transition: 0.5s ease-in-out;
 }
 
 .img-content:not(:hover) {
-    width: 90%;
+    transform: scale(1.0);
     transition: 0.5s ease-in-out;
 }
 
 .smallIMG-content:hover {
-    width: 95%;
+    transform: scale(1.05);
     transition: 0.5s ease-in-out;
 }
 
