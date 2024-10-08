@@ -69,9 +69,35 @@
                     <h1>Programs & Videos</h1>
                     <p>Watch our experience in the classroom!</p>
                 </div>
+
                 <div class="grid-layout-wrapper">
-                    <div id="123"><img onclick="showvid()" src="laptopImg.png" alt="" class="img-content"></div>
-                    <img src="phoneImg.png" alt="" class="smallIMG-content">
+                    
+                    <img onclick="showVid()" src="laptopImg.png" alt="Laptop Image" class="img-content">
+                    
+                    <div id="videoModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="hideVid()">&times;</span>
+                            <video controls>
+                                <source src="mainVideo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    
+
+
+                    <img onclick="showVidphone()" src="phoneImg.png" alt="" class="smallIMG-content">
+
+                    <div id="videoModal-side" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="hideVidphone()">&times;</span>
+                            <video controls>
+                                <source src="sideVideo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
