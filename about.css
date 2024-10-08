@@ -57,6 +57,25 @@
     font-size: .7vw;
 }
 
+.content-box-short {
+    padding: 20px 20px 20px 20px;
+    background-color: #f0f0f0;
+    width: 90%;
+    height: 70%;
+    border-radius: 10%;
+    animation: float-up .5s ease-in-out;
+    box-shadow: 
+        4px 5px rgba(0, 0, 0, 0.5),
+        -4px 5px rgba(139, 0, 0, 0.7);
+}
+
+.content-box-short h1 {
+    font-size: 2vw;
+}
+.content-box-short p {
+    font-size: .7vw;
+}
+
 .divider-wrapper {
     position: relative;
     width: 100%;
@@ -96,6 +115,20 @@
 
 }
 
+@keyframes float-up-push-up {
+    0% {
+        transform: translateY(25%, 100%);
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: translateY(25%, -90%); 
+        opacity: 1;
+    }
+
+}
+
+
 @keyframes float-up-push-left {
     0% {
         transform: translate(15%, 100%); 
@@ -134,12 +167,29 @@
     .content-box h1 {
         text-align: center;
         margin-top: 1rem;
-    }
-
-    .content-box h1 {
         font-size: 15px;
     }
+
     .content-box p {
+        font-size: 10px;
+    }
+
+    .content-box-short {
+        padding: 20px 20px 60px 20px;
+        background-color: #f0f0f0;
+        width: 80%;
+        height: 70%;
+        border-radius: 10%;
+        transform: translate(25%);
+    }
+    
+    .content-box-short h1 {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 15px;
+    }
+    
+    .content-box-short p {
         font-size: 10px;
     }
 }
@@ -177,6 +227,25 @@
         font-size: 8px;
     }
     
+    .content-box-short {
+        padding: 20px 0px 60px 20px;
+        background-color: #f0f0f0;
+        width: 100%;
+        height: 48%;
+        border-radius: 10%;
+        transform: translate(25%);
+    }
+    
+    .content-box-short h1 {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 2vw;
+    }
+
+    .content-box-short p {
+        font-size: 8px;
+    }
+
     .img-wrapper {
         transform: translate(50%, 20%);
         background-color: darkred;
@@ -190,6 +259,11 @@
         animation: float-up-push-left-0 .5s ease-in-out;
     }
 
+    
+    .push-up {
+        transform: translate(25%,-90%);
+        animation: float-up-push-up .5s ease-in-out !important;
+    }
 }
 
 @keyframes float-up-push-left-0 {
@@ -240,6 +314,21 @@
         font-size: 2vw;
     }
     .content-box p {
+        font-size: .8vw;
+    }
+
+    .content-box-short {
+        padding: 20px 20px 60px 25px;
+        width: 90%;
+        height: 50%;
+        border-radius: 10%;
+    }
+    
+
+    .content-box-short h1 {
+        font-size: 2vw;
+    }
+    .content-box-short p {
         font-size: .8vw;
     }
 }
