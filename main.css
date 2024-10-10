@@ -222,7 +222,7 @@
 @media screen and (max-width: 768px) {
 
     .contentSide-wrapper {
-        transform: translate(0%,50%);
+        transform: translate(0%,10%);
     }
     
     .introTXT-content-wrapper {
@@ -285,6 +285,7 @@
     .hero-image {
         display: none;
     }
+
   }
 
 @media screen and (min-width:768px) {
