@@ -40,7 +40,8 @@
 }
 
 .videoContent-wrapper h1 {
-    font-size:2.8vw;
+    font-size:3.5vw;
+    transform: translateX(4%);
 }
 
 .img-content {
@@ -120,12 +121,29 @@
 }
 
 .modal-content {
+
     margin: 10% auto;
     padding: 20px;
     width: 80%;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.grid-layout-video {
+    display: grid;
+    grid-template-columns: 1fr .7fr;
+    column-gap: 0%;
+}
+
+.modal-content video{
+    width: 50%;
+    transform: translate(50%);
+}
+
+.modal-content p,h1 {
+    text-align: center;
+    padding:1rem 5rem 0rem 0rem;
 }
 
 #videoModal .modal-content video {
@@ -168,5 +186,25 @@
 
     .img-content {
         width:100%;
+    }
+
+    .grid-layout-video {
+        grid-template-columns: 1fr;
+        overflow-y: scroll;
+    }
+
+    .modal-content video {
+        transform: translateX(0%);
+    }
+
+    .modal-content {
+        overflow-y:scroll !important;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .grid-layout-video {
+        grid-template-columns: 1fr;
+        overflow-y: scroll;
     }
 }
