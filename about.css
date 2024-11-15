@@ -93,6 +93,59 @@
     animation: slide-divider .5s ease-in-out;
 }
 
+.councilMembersInfo {
+    position: relative;
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 1%;
+    margin-bottom: 5vh;
+}
+
+.councilMembersInfo::before {
+    content: "";
+    background-image: url('https://resources.finalsite.net/images/f_auto,q_auto/v1721657189/fultonschoolsorg/i7jod0vejflf31ksudqf/Untitled46.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    filter: brightness(30%); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-2.5%,-2.5%);
+    width: 105%;
+    height: 105%;
+    z-index: -1; 
+    border-radius: 25px;
+}
+
+.bottom-Spacing {
+    margin-bottom: 2%;
+}
+
+
+.councilInfoBox {
+    color: white;
+    padding: 15%;
+    background-color: darkred;
+    margin: 10px 0;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #f0f0f0;
+}
+
+.councilInfoBox h2 {
+    font-size: 1.8vw;
+}
+.councilInfoBox h3 {
+    font-size: 1vw;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
 @keyframes slide-divider {
     0% {
         width: 0%;
@@ -275,6 +328,28 @@
     100% {
         transform: translate(0%, 0%);
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .councilMembersInfo {
+
+        grid-template-columns: repeat(3,1fr);    
+    }
+/* 
+    .grid-template-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } */
+}
+
+@media screen and (max-width: 768px) {
+    .councilMembersInfo {
+        grid-template-columns: repeat(2,1fr);    
+    }
+
+    .councilInfoBox {
+        padding: 5%;
     }
 }
 

@@ -206,6 +206,7 @@
     position: relative;
     width: 100%;
 }
+
 .divider-line {
     position: relative;
     padding: 10px 10px;
@@ -217,30 +218,42 @@
     transform: translateX(5%);
 }
 
+.contentSideHeader-Wrapper {
+    position: relative;
+    width: 60%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    transform: translate(20%);
 
+}
+
+.contentSideHeader-Wrapper h1 {
+    width: 25rem;
+
+}
+
+.contentSideHeader-Wrapper img {
+    width: 9vh;
+    position: relative;
+    padding: 10px;
+    transform: translate(0%);
+}
 
 @media screen and (max-width: 768px) {
-
-    .contentSide-wrapper {
-        transform: translate(0%,10%);
-    }
-    
-    .introTXT-content-wrapper {
-        transform: translateY(10%);
-    }
-
-    .introTXT-content-wrapper h1 {
-        text-align: center;
-    }
-
-    .introTXT-content-wrapper p {
-        text-align: center;
-        font-size: 15px;
-    }
 
     .img-section-wrapper {
         grid-template-columns: .7fr;
         row-gap: 3rem;
+    }
+
+    .contentSideHeader-Wrapper {
+        grid-template-columns:1fr;
+        column-gap: 2rem;
+    }
+    .contentSideHeader-Wrapper img {
+        transform: translate(160%);
     }
 
     .img-content {
@@ -255,13 +268,6 @@
         transform: translate(25%,-25%);
     }
 
-    .indexIntro-wrapper {
-        grid-template-columns: 1fr;
-    }
-
-    .introImage-Wrapper {
-        margin-bottom: 90%;
-    }
     
     .mainIntro-Img {
         transform: translateX(10%);
@@ -357,7 +363,33 @@
     }
 }
 
+@media screen and (max-width:900px) {
+    .indexIntro-wrapper {
+        grid-template-columns: 1fr;
+    }
 
+    .introImage-Wrapper {
+        margin-bottom: 90%;
+    }
+
+    .contentSide-wrapper {
+        transform: translate(0%,10%);
+    }
+    
+    .introTXT-content-wrapper {
+        transform: translateY(10%);
+    }
+
+    .introTXT-content-wrapper h1 {
+        text-align: center;
+    }
+
+    .introTXT-content-wrapper p {
+        text-align: center;
+        font-size: 15px;
+    }
+    
+}
 
 @media screen and (min-width:900px) {
     .indexIntro-wrapper {
@@ -408,12 +440,6 @@
         text-align: center;
         font-size: 1.7vw;
     }
-       
-    .introTXT-content-wrapper h1 {
-        text-align: center;
-        font-size: 2vw;
-
-    } 
 
     
     .contentSide-wrapper {
