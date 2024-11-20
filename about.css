@@ -101,6 +101,7 @@
     grid-template-columns: repeat(4,1fr);
     column-gap: 1%;
     margin-bottom: 5vh;
+    margin-top: 5vh;
 }
 
 .councilMembersInfo::before {
@@ -121,6 +122,12 @@
 
 .bottom-Spacing {
     margin-bottom: 2%;
+}
+
+.title-spacing {
+    height: 100%;
+    padding: 20px 20px 20px;
+    margin-top: 15vh;
 }
 
 

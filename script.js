@@ -29,3 +29,14 @@ function hideVidphone() {
         modal.style.display = "none";
     }, 500);
 }
+
+function modalInfoBox_Header(things) {
+    document.getElementById("modal-title").innerHTML = `${things}`;
+
+}
+
+
+function modalInfoBox_Content(things) {
+    document.getElementById("my-modal-text").innerHTML = `${things}`;
+
+}
