@@ -35,8 +35,22 @@ function modalInfoBox_Header(things) {
 
 }
 
-
 function modalInfoBox_Content(things) {
     document.getElementById("my-modal-text").innerHTML = `${things}`;
+
+}
+
+function profile_modal_Header(things) {
+    document.getElementById("modal-title").innerHTML = `${things}`;
+
+}
+
+function profile_modal_Content(things) {
+    document.getElementById("my-modal-text").innerHTML = `${things}`;
+
+}
+
+function profile_modal_Content2(things) {
+    document.getElementById("my-modal-text2").innerHTML = `${things}`;
 
 }
