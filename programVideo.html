@@ -59,6 +59,39 @@
             </div>
         </nav>
 
+
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content">
+          
+                <div class="modal-header">
+                  <h4 id="modal-title">Modal Heading</h4>
+                </div>
+          
+                <div class="modal-body ">
+                    <div class="grid-layout-video">
+                        <div>
+                            <video controls>
+                                <source src="mainVideo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div>
+                            <h1>Lorem ipsum odor amet</h1>
+                            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Egestas lectus hac sapien a ultricies curabitur tristique pellentesque. Nec netus felis pulvinar dictum donec nibh. Libero lobortis fusce laoreet eros praesent varius adipiscing fringilla. Condimentum quam augue fringilla est vel diam ridiculus. Pellentesque class hac, enim turpis class praesent. Donec curae torquent litora blandit tempus consequat viverra etiam vitae.</p>
+                        </div>
+                    </div>
+                </div>
+          
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+        </div>
+
+
         <section class="videoSection-wrapper">
             <div class="imgBG-wrapper">
                 <img src="programVideo-IMG.jpeg" alt="bg" class="bg-IMG">
@@ -71,49 +104,38 @@
 
                 <div class="grid-layout-wrapper">
                     
-                    <img onclick="showVid()" src="laptopImg.png" alt="Laptop Image" class="img-content">
+                    <img 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#myModal" 
+                        src="laptopImg.png" 
+                        alt="" 
+                        class="img-content"
+                        data-title="Laptop Details"
+                        data-paragraph="This is the description for the laptop."
+                        data-video="mainVideo.mp4"
+                    >                    
+
+                    <img 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#myModal" 
+                        src="ipad.png" 
+                        alt="" 
+                        class="med-img-content"
+                        data-title="Ipad Details"
+                        data-paragraph="This is the description for the Ipad."
+                        data-video="video3.mp4"
+                    >
                     
-                    <div id="videoModal" class="modal">
-                        <div class="modal-content">
-                            <span class="close" onclick="hideVid()">&times;</span>
-
-                            <div class="grid-layout-video">
-                                <div>
-                                    <video controls>
-                                        <source src="mainVideo.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                                <div>
-                                    <h1>Lorem ipsum odor amet</h1>
-                                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Egestas lectus hac sapien a ultricies curabitur tristique pellentesque. Nec netus felis pulvinar dictum donec nibh. Libero lobortis fusce laoreet eros praesent varius adipiscing fringilla. Condimentum quam augue fringilla est vel diam ridiculus. Pellentesque class hac, enim turpis class praesent. Donec curae torquent litora blandit tempus consequat viverra etiam vitae.</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    
-
-
-                    <img onclick="showVidphone()" src="phoneImg.png" alt="" class="smallIMG-content">
-
-                    <div id="videoModal-side" class="modal">
-                        <div class="modal-content">
-                            <span class="close" onclick="hideVidphone()">&times;</span>
-                            <div class="grid-layout-video">
-                                <div>
-                                    <video controls>
-                                        <source src="sideVideo.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                                <div>
-                                    <h1>Lorem ipsum odor amet</h1>
-                                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Egestas lectus hac sapien a ultricies curabitur tristique pellentesque. Nec netus felis pulvinar dictum donec nibh. Libero lobortis fusce laoreet eros praesent varius adipiscing fringilla. Condimentum quam augue fringilla est vel diam ridiculus. Pellentesque class hac, enim turpis class praesent. Donec curae torquent litora blandit tempus consequat viverra etiam vitae.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <img 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#myModal" 
+                        src="phoneImg.png" 
+                        alt="" 
+                        class="smallIMG-content"
+                        data-title="Phone Details"
+                        data-paragraph="This is the description for the phone."
+                        data-video="sideVideo.mp4"
+                    >  
 
                 </div>
             </div>

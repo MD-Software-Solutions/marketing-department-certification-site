@@ -165,7 +165,6 @@
     z-index: 0;
     max-height: 90vh;
     object-fit: contain;
-    border-radius: 10%;
 }
 .mainIntro-Img:hover {
     filter: brightness(70%);
