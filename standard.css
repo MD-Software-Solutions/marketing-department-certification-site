@@ -35,6 +35,11 @@
     transform: translate(15%);
 }
 
+.wbl-glad-logo {
+    width: 50%;
+    transform: translate(50%);
+}
+
 
 .divider-line {
     position: relative;
@@ -55,11 +60,12 @@
     height: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 0%;
 }
 
 .introWBL_wrapper h1 {
-    transform: translateY(10%);
-    font-size: 6vw;
+    transform: translate(-10%,50%);
+    font-size: 3vw;
     display: flex;
     justify-content: center;
 }
@@ -277,44 +283,51 @@
     height: auto;
     background-color: darkred;
     border-radius: 25px;
+    padding-top: 20px;
 
     img {
-        width: 40%;
-        height: 40%;
-        transform: translate(70%);
+        width: 50%;
+        height: 50%;
+        transform: translate(50%);
         padding: 5%;
     }
 
     h2 {
-        font-size: 1.2vw;
+        font-size: 1.3vw;
         padding: 6%;
         padding-bottom: 8%;
         color: white;
     }
 
     .CTAE-IMG {
-        width: 80%;
-        transform: translate(10%);
+        width: 90%;
+        transform: translate(5%);
     }
 }
 
 .contribute-container-primary {
     width: 100%;
     height: auto;
-    padding: 5%;
+    padding: 3%;
 }
 
 .contribute-card {
-    width: 100%;
+    width: 57%;
     height: auto;
     background-color: darkred;
     border-radius: 25px;
-    padding: 8%;
+    padding: 3%;
+    transform: translate(35%);
     
     h1 {
         color: white;
-        font-size: 3vw;
+        font-size: 2vw;
     }
+}
+
+.bg-white {
+    background: white;
+    border-radius: 15px;
 }
 
 .grid-3-edu-resource {
@@ -395,6 +408,57 @@
         border-radius: 25px;
         color: white;
         padding: 5%;
+    }
+}
+
+.alumni-grid-wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 5%;
+    background-image: url(jchs-backdrop.peg);
+}
+
+.alumni-card {
+    width: 100%;
+    height: auto;
+    background-color: darkred;
+    border-radius: 20px;
+    margin-top: 2rem;
+
+    .card-grid-wrapper {
+        width: 100%;
+        height: auto;
+        padding: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        img {
+            width: 100%;
+            position: relative;
+            height: auto;
+            border-radius: 20px;
+        }
+        h1 {
+            font-size: 2vw;
+            text-align: center;
+            color: white;
+        }
+
+        p {
+            color: white;
+            padding: 5%;
+            text-align: center;
+        }
+
+        .font-size-large {
+            font-size: 1.6vw;
+        }
+
+        .font-size-med {
+            font-size: 1.3vw;
+        }
+
     }
 }
 
