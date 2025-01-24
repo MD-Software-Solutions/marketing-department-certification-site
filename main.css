@@ -61,15 +61,15 @@
     padding: 0rem 0rem;
     background-color: rgba(0, 0, 0, 0.5);
     width: 50%;
-    height:65%;
+    height:85%;
     border-radius: 15%;
-    transform: translateY(50%);
+    transform: translateY(30%);
     padding-left: 2rem;
 }
 
 .column-left h1 {
-    margin-bottom: 2rem;
-    font-size: 80px;
+    margin-bottom: 1.5rem;
+    font-size: 100px;
 }
 
 .column-left p {
@@ -145,7 +145,7 @@
     grid-template-columns: 1fr 1fr;
     width: 100%;
     height:auto;
-    padding: 8vh;
+    padding: 0;
     column-gap: 0%;
     background-color: #f0f0f0;
 }
@@ -278,7 +278,7 @@
 
     .column-left h1 {
         margin-top: 5rem;
-        font-size: 80px;
+        font-size: 65px;
     
     }
     
@@ -296,16 +296,16 @@
 @media screen and (min-width:768px) {
     
     .column-left h1 {
-        font-size: 120px;
+        font-size: 100px;
 
     }
 
     .column-left p {
-        font-size: 80px;
+        font-size: 60px;
     }
     
     .hero-text {
-        line-height: 75px;
+        line-height: 85px;
     }
 
     .contentSide-wrapper {
