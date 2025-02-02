@@ -214,18 +214,14 @@
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5%;
     padding: 0 5% 5% 5%;
     position: relative;
-    justify-content: center;
+    text-align: center;
 
-    a {
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        font-size: 1.2rem;
-        padding: 10%;
-        background-color: white;
-        border-radius: 20px;
+    @media screen and (max-width: 800px) {
+        grid-template-columns: 1fr;
+        row-gap: 5%;
     }
 }
 .grid-2-container-button {
@@ -233,35 +229,38 @@
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 0;
+    column-gap: 5%;
     padding: 0 5% 5% 5%;
     position: relative;
-    justify-content: center;
+    text-align: center;
 
-    a {
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        font-size: 1rem;
-        padding: 5%;
-        background-color: white;
-        border-radius: 25px;
+    @media screen and (max-width: 800px) {
+        grid-template-columns: 1fr;
+        row-gap: 5%;
     }
 }
 
-/* .button-pathway {
-    padding: 5%;
-    background-color: white;
-    width: 80%;
-    border-radius: 15px;
+.button {
+    display: block;
+    width: 100%;
+    padding: 12px 20px; 
+    color: black;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-} */
-
-/* .button-pathway:hover {
+    transition: background-color 0.3s ease;
+    background-color: white;
+    text-decoration: none;
+  }
+  
+  .button:hover {
     background-color: black;
     color: white;
-    transition: all .5s ease;
-} */
+  }
+  
 
 .lab-container-primary {
     width: 100%;
@@ -379,6 +378,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2%;
+
+    @media screen and (max-width:768px) {
+        grid-template-columns: 1fr;
+        row-gap: 5%;
+
+        h2 {
+            font-size: 1.1rem;
+            padding-bottom: 6rem;
+        }
+        margin-bottom: 10rem;
+    }
 }
 .profile-container-primary {
     width: 100%;
