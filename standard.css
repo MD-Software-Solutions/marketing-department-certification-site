@@ -13,6 +13,19 @@
     color: darkred;
 }
 
+
+.summary-text {
+    padding: 5%;
+    padding-inline: 10%;
+    font-size: 30px;
+    text-align: justify;
+}
+
+.stan7-titles {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
 .center {
     display: flex;
     justify-content: center;
