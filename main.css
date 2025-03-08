@@ -61,9 +61,9 @@
     color: #000;
     padding: 0rem 0rem;
     background-color: rgba(0, 0, 0, 0.5);
-    width: 50%;
+    width: 60%;
     height:85%;
-    border-radius: 15%;
+    border-radius: 40px;
     transform: translateY(30%);
     padding-left: 2rem;
 }
@@ -71,6 +71,8 @@
 .column-left h1 {
     margin-bottom: 1.5rem;
     font-size: 100px;
+    line-height: 100px
+
 }
 
 .column-left p {
@@ -461,13 +463,13 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
     .column-left {
-        width: 60%;
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
     .column-left {
         width: 70%;
     }
@@ -484,4 +486,4 @@
         width: 100%;
     }
 }
-
+ */
