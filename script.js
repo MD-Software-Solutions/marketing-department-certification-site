@@ -56,3 +56,8 @@ function updateModalContent(title, paragraph, videoSrc) {
         }
     }
 }
+
+
+function openPptModal(pptUrl) {
+    document.getElementById('pptFrame').src = pptUrl;
+}

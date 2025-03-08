@@ -13,6 +13,19 @@
     color: darkred;
 }
 
+
+.summary-text {
+    padding: 5%;
+    padding-inline: 10%;
+    font-size: 30px;
+    text-align: justify;
+}
+
+.stan7-titles {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
 .center {
     display: flex;
     justify-content: center;
@@ -91,17 +104,17 @@
 .strip-container {
     position: relative;
     width: 100%;
-    margin-top: 7rem;
+    margin-top: 107px;
 
 }
 
 .red-strip {
     width: 100%;
-    height: 100px;
+    height: 110px;
     background-color: darkred;
     position: relative;
     color: white;
-    font-size: 3vw;
+    font-size: 10px;
 
     h1 {
         transform: translate(0,50%);
@@ -214,18 +227,14 @@
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5%;
     padding: 0 5% 5% 5%;
     position: relative;
-    justify-content: center;
+    text-align: center;
 
-    a {
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        font-size: 1.2rem;
-        padding: 10%;
-        background-color: white;
-        border-radius: 20px;
+    @media screen and (max-width: 800px) {
+        grid-template-columns: 1fr;
+        row-gap: 5%;
     }
 }
 .grid-2-container-button {
@@ -233,35 +242,38 @@
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 0;
+    column-gap: 5%;
     padding: 0 5% 5% 5%;
     position: relative;
-    justify-content: center;
+    text-align: center;
 
-    a {
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        font-size: 1rem;
-        padding: 5%;
-        background-color: white;
-        border-radius: 25px;
+    @media screen and (max-width: 800px) {
+        grid-template-columns: 1fr;
+        row-gap: 5%;
     }
 }
 
-/* .button-pathway {
-    padding: 5%;
-    background-color: white;
-    width: 80%;
-    border-radius: 15px;
+.button {
+    display: block;
+    width: 100%;
+    padding: 12px 20px; 
+    color: black;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-} */
-
-/* .button-pathway:hover {
+    transition: background-color 0.3s ease;
+    background-color: white;
+    text-decoration: none;
+  }
+  
+  .button:hover {
     background-color: black;
     color: white;
-    transition: all .5s ease;
-} */
+  }
+  
 
 .lab-container-primary {
     width: 100%;
@@ -379,6 +391,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2%;
+
+    @media screen and (max-width:768px) {
+        grid-template-columns: 1fr;
+        row-gap: 5%;
+
+        h2 {
+            font-size: 1.1rem;
+            padding-bottom: 6rem;
+        }
+        margin-bottom: 10rem;
+    }
 }
 .profile-container-primary {
     width: 100%;
@@ -390,8 +413,9 @@
     width: 100%;
     height: auto;
     background-color: darkred;
-    border-radius: 25px;
+    border-radius: 15px;
     margin-bottom: 2rem;
+    padding: 5%;
 }
 
 .grid-2-profile{
@@ -399,6 +423,7 @@
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
 
     img {
         width: 90%;
@@ -420,14 +445,13 @@
 }
 
 .profile-button-modal {
-    width: 20%;
-    padding: 2%;
+    width: 40%;
+    height: auto;
+    /* padding: 2%; */
     transform: translate(10%,-60%);
 
     p {
-        font-size:2vw;
-        transform: translate(0%,10%);
-
+        font-size:1rem;
     }
 }
 

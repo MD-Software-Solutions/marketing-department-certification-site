@@ -18,13 +18,13 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="https://s3-us-west-2.amazonaws.com/sportshub2-uploads-prod/files/sites/213/2018/03/28180610/Johns_Creek_HS_Logo_Gladiator.png">
+        <link rel="icon" type="image/x-icon" href="logo.png">
     </head>
     <body>
         <nav class="navbar navbar-expand-md bg-light navbar-light py-4 fixed-top shadow-sm">
             <div class="container-fluid">
                 <a class="navbar-brand mx-2" href=index.html>
-                    <img class="mx-3" width="40px" height="40px" src="https://s3-us-west-2.amazonaws.com/sportshub2-uploads-prod/files/sites/213/2018/03/28180610/Johns_Creek_HS_Logo_Gladiator.png" alt="">
+                    <img class="mx-3" width="40px" height="40px" src="logo.png" alt="">
                     <a class=" nav-link" href="index.html">Johns Creek High School</a>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -32,6 +32,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav mx-3">
+                        
+                        
                         <li class="nav-item mx-1 underline">
                             <a class=" nav-link" href="programVideo.html" role="button">Programs & Video</a>
                         </li>
@@ -61,30 +63,25 @@
         <div class="strip-container red-strip">
             <h1 class="center">Standard 6 -  Student Career Development</h1>
         </div>
-
+        
         <div class="modal fade" id="myModal">
             <div class="modal-dialog modal-dialog-centered modal-xl">
-              <div class="modal-content">
-          
-                <div class="modal-header">
-                  <h4 id="modal-title">Modal Heading</h4>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-          
-                <div class="modal-body ">
-                    <div class="modal-content-container">
-                        <div class="grid-2-modal-profile">
-                            <div id="my-modal-text">Modal body..</div>
-                            <div id="my-modal-text2">Modal body..</div>
-                        </div>
+                <div class="modal-content">
+        
+                    <div class="modal-header">
+                        <h4 id="modal-title">Presentation</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
+        
+                    <div class="modal-body">
+                        <iframe id="pptFrame" width="100%" height="500px" style="border: none;"></iframe>
+                    </div>
+        
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+        
                 </div>
-          
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                </div>
-          
-              </div>
             </div>
         </div>
 
@@ -97,15 +94,35 @@
                         <h1>Vijit</h1>
                         <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vel pretium proin pharetra porttitor; malesuada proin sodales a. Litora ut penatibus aenean maecenas vitae nullam vehicula augue. Dui litora nisl aptent, aenean curae ligula cubilia tortor himenaeos. Lacinia platea hendrerit orci sit sed. Ultrices lectus fringilla litora pellentesque nec tristique velit orci.</p>
                     </div>
-                    <img src="placeholderImg.svg" alt="">
+                    <img src="vijitIMG.png" alt="">
                 </div>
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content">
+                
+                            <div class="modal-header">
+                                <h4 id="modal-title">Presentation</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                
+                            <div class="modal-body">
+                                <iframe id="pptFrame" width="100%" height="500px" style="border: none;"></iframe>
+                            </div>
+                
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+                
                 <button 
-                    type="button" class="profile-button-modal btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal" onclick="profile_modal_Header('Vijit');
-                            profile_modal_Content('Lorem ipsum odor amet, consectetuer adipiscing elit. Quis risus dignissim nullam, proin tortor urna facilisi dapibus. Dapibus turpis ad ultrices nulla quam enim molestie.');
-                            profile_modal_Content2('Lorem ipsum odor amet, consectetuer adipiscing elit. Quis risus dignissim nullam, proin tortor urna facilisi dapibus. Dapibus turpis ad ultrices nulla quam enim molestie.')" >
-                    
-                    <p>Learn More +</p>
+                    type="button" class="profile-button-modal btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal" 
+                    onclick="openPptModal('https://fultonk12-my.sharepoint.com/personal/203413860_fcstu_org/_layouts/15/Doc.aspx?sourcedoc={f1e1eefb-1c4a-4880-b768-3eae429af62a}&amp;action=embedview&amp;wdAr=1.7777777777777777')">
+                    Learn More
                 </button>
+                
             </div>
 
             
@@ -115,15 +132,14 @@
                         <h1>Ayaan</h1>
                         <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vel pretium proin pharetra porttitor; malesuada proin sodales a. Litora ut penatibus aenean maecenas vitae nullam vehicula augue. Dui litora nisl aptent, aenean curae ligula cubilia tortor himenaeos. Lacinia platea hendrerit orci sit sed. Ultrices lectus fringilla litora pellentesque nec tristique velit orci.</p>
                     </div>
-                    <img src="placeholderImg.svg" alt="">
+                    <img src="AyaanIMG.png" alt="">
                 </div>
                 <button 
-                    type="button" class="profile-button-modal btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal" onclick="profile_modal_Header('Ayaan');
-                            profile_modal_Content('Lorem ipsum odor amet, consectetuer adipiscing elit. Quis risus dignissim nullam, proin tortor urna facilisi dapibus. Dapibus turpis ad ultrices nulla quam enim molestie.');
-                            profile_modal_Content2('Lorem ipsum odor amet, consectetuer adipiscing elit. Quis risus dignissim nullam, proin tortor urna facilisi dapibus. Dapibus turpis ad ultrices nulla quam enim molestie.')" >
-                    
-                    <p>Learn More +</p>
+                    type="button" class="profile-button-modal btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal" 
+                    onclick="openPptModal('Aayan.pdf')">
+                    Learn More
                 </button>
+                
             </div>
 
             <div class="profile-card">
@@ -132,14 +148,12 @@
                         <h1>Justin</h1>
                         <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vel pretium proin pharetra porttitor; malesuada proin sodales a. Litora ut penatibus aenean maecenas vitae nullam vehicula augue. Dui litora nisl aptent, aenean curae ligula cubilia tortor himenaeos. Lacinia platea hendrerit orci sit sed. Ultrices lectus fringilla litora pellentesque nec tristique velit orci.</p>
                     </div>
-                    <img src="placeholderImg.svg" alt="">
+                    <img src="justinIMG.png" alt="">
                 </div>
                 <button 
-                    type="button" class="profile-button-modal btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal" onclick="profile_modal_Header('Justin');
-                            profile_modal_Content('Lorem ipsum odor amet, consectetuer adipiscing elit. Quis risus dignissim nullam, proin tortor urna facilisi dapibus. Dapibus turpis ad ultrices nulla quam enim molestie.');
-                            profile_modal_Content2('Lorem ipsum odor amet, consectetuer adipiscing elit. Quis risus dignissim nullam, proin tortor urna facilisi dapibus. Dapibus turpis ad ultrices nulla quam enim molestie.')" >
-                    
-                    <p>Learn More +</p>
+                    type="button" class="profile-button-modal btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal" 
+                    onclick="openPptModal('https://fultonk12-my.sharepoint.com/personal/203413860_fcstu_org/_layouts/15/Doc.aspx?sourcedoc={e41fa475-0b68-4a94-a4a4-17e2ca3c36ed}&amp;action=embedview&amp;wdAr=1.7777777777777777')">
+                    Learn More
                 </button>
             </div>
         </div>
