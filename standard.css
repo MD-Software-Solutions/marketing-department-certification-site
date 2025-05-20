@@ -319,9 +319,13 @@
     height: auto;
     background-color: darkred;
     border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    video {
-        width: 100%;
+    iframe {
+        width: 80vh;
+        height: 80vh;
         padding: 25px;
     }
 }
